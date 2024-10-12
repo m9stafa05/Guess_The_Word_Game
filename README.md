@@ -7,5 +7,4 @@ Welcome to Guess The Word, a fun word-guessing game where you have five attempts
   <li>Two Hints: Use up to two helpful hints to narrow down your guesses.</li>
   <li>Responsive Feedback: Immediate feedback after each guess to guide your next move.</li>
   <li>Easy to Play: Simple and intuitive design for all age groups.</li>
-  <li></li>
 </ul>

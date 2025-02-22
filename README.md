@@ -1,4 +1,4 @@
-# AS A frontEnd Project
+# # AS A FrontEnd Project
 
 # Guess The Word Game - README
 Welcome to Guess The Word, a fun word-guessing game where you have five attempts to guess the hidden word. This README will guide you on how to play and understand the rules of the game.

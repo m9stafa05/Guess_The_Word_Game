@@ -35,9 +35,3 @@ Usage
 - CSS
 
 No external frameworks required.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

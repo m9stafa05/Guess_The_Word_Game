@@ -13,22 +13,7 @@ A fun, interactive word guessing game built with web technologies.
 
 ---
 
-## Installation
-
-Clone the repository and open `index.html` in your browser, or deploy the project on any static hosting service.
-
-```bash
-# Clone the repository
-git clone <your-repo-url>
-cd Guess-The-Word-Game
-
-# Open index.html in your browser
-# Or deploy the folder to Vercel, Netlify, GitHub Pages, etc.
-```
-
----
-
-## Usage
+Usage
 
 1. Open the game in your browser.
 2. Start guessing the letters of the hidden word.
@@ -45,7 +30,7 @@ cd Guess-The-Word-Game
 
 ## Dependencies
 
-- Vanilla JavaScript
+- JavaScript
 - HTML
 - CSS
 

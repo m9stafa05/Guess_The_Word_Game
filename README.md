@@ -1,14 +1,58 @@
-## AS A FrontEnd Project
+# Guess The Word Game
 
-# Guess The Word Game - README
-Welcome to Guess The Word, a fun word-guessing game where you have five attempts to guess the hidden word. This README will guide you on how to play and understand the rules of the game.
+A fun, interactive word guessing game built with web technologies.
 
-<h1>Live Preview</h1>
-https://m9stafa05.github.io/Guess_The_Word_Game/
-<h2>Features</h2>
-<ul>
-  <li>Five Guesses: Challenge yourself to find the word in just 5 tries.</li>
-  <li>Two Hints: Use up to two helpful hints to narrow down your guesses.</li>
-  <li>Responsive Feedback: Immediate feedback after each guess to guide your next move.</li>
-  <li>Easy to Play: Simple and intuitive design for all age groups.</li>
-</ul>
+---
+
+## Features
+
+- 🎲 **Random word generation**
+- ⌨️ **User input for guesses**
+- 🏆 **Score tracking**
+- 📱 **Responsive UI** (works on mobile, tablet, and desktop)
+
+---
+
+## Installation
+
+Clone the repository and open `index.html` in your browser, or deploy the project on any static hosting service.
+
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd Guess-The-Word-Game
+
+# Open index.html in your browser
+# Or deploy the folder to Vercel, Netlify, GitHub Pages, etc.
+```
+
+---
+
+## Usage
+
+1. Open the game in your browser.
+2. Start guessing the letters of the hidden word.
+3. Use the hints if you get stuck (limited number of hints per game).
+4. Try to guess the word in as few tries as possible!
+
+---
+
+## Live Preview
+
+[Play Guess The Word Game](https://guess-the-word-game-indol.vercel.app/)
+
+---
+
+## Dependencies
+
+- Vanilla JavaScript
+- HTML
+- CSS
+
+No external frameworks required.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).

@@ -1,0 +1,448 @@
+/* ===============================
+   Responsive Stylesheet
+   For Guess The Word Game
+   ===============================
+   - Fluid layouts with %, rem, vw, vh
+   - Media queries for 320px, 480px, 768px, 1024px, 1200px
+   - Responsive typography scaling
+   - Flexible navigation (hamburger menu placeholder)
+   - Responsive images and buttons
+   - Adaptive widths/heights
+   =============================== */
+
+/* --- 1. Base Fluid Layouts & Typography --- */
+html {
+  font-size: 16px;
+}
+body {
+  min-width: 320px;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 1rem;
+}
+.gess-game {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: 2vh auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.game-area,
+.key-colors {
+  width: 100%;
+}
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: flex-start;
+}
+.inputs input {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  margin: 0 0.2rem 0.5rem 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.control button {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
+}
+.key-colors {
+  margin-top: 2rem;
+}
+.key-color {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+.key {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+.key-text {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2rem;
+  padding: 1rem 0.5rem 0.5rem;
+}
+.message {
+  font-size: 2rem;
+}
+footer {
+  font-size: 1rem;
+  padding: 1rem 0;
+  position: static;
+  width: 100%;
+}
+
+/* --- 2. Responsive Images (if any) --- */
+img,
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- 3. Responsive Navigation (Hamburger Placeholder) --- */
+/*
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 0.3rem;
+  background: #333;
+  margin: 0.2rem 0;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+  }
+  .nav.active .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+*/
+
+/* --- 4. Media Queries for Breakpoints --- */
+
+/* Smallest screens: 320px+ */
+@media (max-width: 479px) {
+  html {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 1.1rem;
+    padding: 0.5rem 0.2rem 0.2rem;
+  }
+  .gess-game {
+    padding: 0 0.2rem;
+  }
+  .inputs input {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .key {
+    width: 1rem;
+    height: 1rem;
+  }
+  .key-text {
+    font-size: 0.7rem;
+  }
+  .message {
+    font-size: 1rem;
+  }
+  .control button {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  footer {
+    font-size: 0.7rem;
+    padding: 0.3rem 0;
+  }
+}
+
+/* Small phones: 480px+ */
+@media (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .inputs input {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+  .key {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .key-text {
+    font-size: 0.85rem;
+  }
+  .message {
+    font-size: 1.2rem;
+  }
+  .control button {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablets: 768px+ */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 15px;
+  }
+  .gess-game {
+    flex-direction: row;
+    max-width: 900px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .key-colors {
+    width: 320px;
+    margin-top: 0;
+    padding-left: 2rem;
+  }
+  .game-area {
+    width: 60%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .inputs input {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+  }
+  .key {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .key-text {
+    font-size: 1rem;
+  }
+  .message {
+    font-size: 1.7rem;
+  }
+  .control button {
+    font-size: 1.1rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+}
+
+/* Small laptops: 1024px+ */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  html {
+    font-size: 16px;
+  }
+  .gess-game {
+    max-width: 1000px;
+    padding: 0 2.5rem;
+  }
+  .key-colors {
+    width: 350px;
+    padding-left: 2.5rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .inputs input {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+  }
+  .key {
+    width: 2rem;
+    height: 2rem;
+  }
+  .key-text {
+    font-size: 1.1rem;
+  }
+  .message {
+    font-size: 2rem;
+  }
+  .control button {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktops: 1200px+ */
+@media (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+  .gess-game {
+    max-width: 1200px;
+    padding: 0 3rem;
+  }
+  .key-colors {
+    width: 400px;
+    padding-left: 3rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .inputs input {
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.3rem;
+  }
+  .key {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  .key-text {
+    font-size: 1.2rem;
+  }
+  .message {
+    font-size: 2.5rem;
+  }
+  .control button {
+    font-size: 1.3rem;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+/* --- 5. Utility: Hide scrollbars on mobile --- */
+@media (max-width: 767px) {
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* --- 6. Utility: Make all elements box-sizing border-box --- */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .inputs > div {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.15rem !important;
+    width: 100% !important;
+    overflow-x: auto;
+  }
+  .inputs input {
+    width: 1.1rem !important;
+    height: 1.1rem !important;
+    font-size: 0.7rem !important;
+    margin: 0 0.05rem !important;
+    padding: 0 !important;
+    min-width: 1.1rem !important;
+    max-width: 1.3rem !important;
+    border-radius: 0.2rem !important;
+  }
+}
+
+/* Improved check button style for all screens */
+.check {
+  display: block;
+  width: 100%;
+  max-width: 180px;
+  margin: 0.5rem auto 0.2rem auto;
+  background: var(--primary-color, #da2114);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  transition: background 0.2s, transform 0.1s;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+.check:active {
+  transform: scale(0.97);
+}
+.check:disabled {
+  background: #aaa;
+  color: #fff;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+@media (max-width: 480px) {
+  .check {
+    max-width: 120px;
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+    border-radius: 0.35rem;
+    margin: 0.3rem auto 0.1rem auto;
+  }
+}
+/* Remove unused/redundant button styles from previous mobile rules */
+@media (max-width: 599px) {
+  .control button {
+    font-size: unset !important;
+    padding: unset !important;
+    min-width: unset !important;
+    width: unset !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 100vh !important;
+    width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .gess-game {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100vw !important;
+    margin: 0 auto !important;
+    max-width: 100vw !important;
+    min-height: unset !important;
+  }
+}
